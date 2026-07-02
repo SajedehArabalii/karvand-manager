@@ -272,10 +272,16 @@ def report(karvands):
     total_students = len(karvands)
     total_skills_count = 0
     unique_skills = set()
+    unique_cities = set()
     total_score = 0
     score_count = 0
 
     for k in karvands:
+
+        city = k.get("city", "").strip().title()
+        if city:
+            unique_cities.add(city)
+
         skills = k.get("skills", [])
         for skill in skills:
             total_skills_count += 1
@@ -292,13 +298,15 @@ def report(karvands):
 
     avg_score = (total_score / score_count) if score_count > 0 else 0.0
     unique_skills_list = sorted(list(unique_skills))
+    unique_cities_list = sorted(list(unique_cities))
 
     # Format the report dictionary for JSON output
     report_data = {
         "total_karvands": total_students,
         "total_registered_skills": total_skills_count,
         "average_skill_score": round(avg_score, 2),
-        "unique_skills": unique_skills_list
+        "unique_skills": unique_skills_list,
+        "unique_cities": unique_cities_list
     }
 
     # Print the report to the console
@@ -308,6 +316,7 @@ def report(karvands):
     print(f"Average Skill Score: {report_data['average_skill_score']}")
     print(f"Unique Skills Count: {len(report_data['unique_skills'])}")
     print(f"Skills List: {', '.join(report_data['unique_skills']) if report_data['unique_skills'] else 'None'}")
+    print(f"Cities List: {', '.join(report_data['unique_cities']) if report_data['unique_cities'] else 'None'}")
     print("================================================\n")
 
     # Save to report.json
