@@ -145,6 +145,7 @@ def search_by_id(karvands):
     else:
         print(f"\nNo karvand found with ID {search_id}")
 
+
 # Search for karvands who have a specific skill
 def search_by_skill(karvands):
     search_query = input("Enter the skill name to search for: ").strip().lower()
