@@ -1,0 +1,47 @@
+{
+    "bootcamp": {
+        "title": "Karvand Python",
+        "year": 2026
+    },
+    "karvands": [
+        {
+            "id": 1,
+            "full_name": "Sajedeh Arabali",
+            "email": "arabalisajedeh@gmail.com",
+            "city": "Ghaemshahr",
+            "education": {
+                "degree": "Bachelor's",
+                "field": "computer science"
+            },
+            "skills": [
+                {
+                    "name": "python",
+                    "level": "intermediate",
+                    "score": 100
+                },
+                {
+                    "name": "cpp",
+                    "level": "beginner",
+                    "score": 80
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "full_name": "Reza Rezaii",
+            "email": "rexa#gmail.com",
+            "city": "sari",
+            "education": {
+                "degree": "master's",
+                "field": "computer engineering"
+            },
+            "skills": [
+                {
+                    "name": "python",
+                    "level": "advanced",
+                    "score": 100
+                }
+            ]
+        }
+    ]
+}
