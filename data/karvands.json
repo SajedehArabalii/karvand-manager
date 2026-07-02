@@ -11,7 +11,7 @@
             "city": "Ghaemshahr",
             "education": {
                 "degree": "Bachelor's",
-                "field": "computer science"
+                "field": "Computer engineer"
             },
             "skills": [
                 {
@@ -23,23 +23,6 @@
                     "name": "cpp",
                     "level": "beginner",
                     "score": 80
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "full_name": "Reza Rezaii",
-            "email": "rexa#gmail.com",
-            "city": "sari",
-            "education": {
-                "degree": "master's",
-                "field": "computer engineering"
-            },
-            "skills": [
-                {
-                    "name": "python",
-                    "level": "advanced",
-                    "score": 100
                 }
             ]
         }

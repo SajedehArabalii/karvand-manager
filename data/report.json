@@ -1,0 +1,12 @@
+{
+    "total_karvands": 1,
+    "total_registered_skills": 2,
+    "average_skill_score": 90.0,
+    "unique_skills": [
+        "Cpp",
+        "Python"
+    ],
+    "unique_cities": [
+        "Ghaemshahr"
+    ]
+}
